@@ -71,7 +71,7 @@ o	F1-score: ~0.95 for both classes
 •	 [ 15 174]]  → False Originals vs True Deepfakes
 
 These results confirm balanced performance, with the model effectively detecting manipulated videos while minimizing false alarms.
-![My Image](deeplungs.png)
+![Deepguard](Deepguard.png)
 
 
 
