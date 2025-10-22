@@ -1,13 +1,16 @@
 # deepfakes_detect
 Deepfake Video Detection Using a Hybrid CNN-ViT-Temporal Transformer Architecture
 ________________________________________
+
 Abstract
 Deepfake detection has become a critical challenge due to the increasing sophistication of AI-generated videos. In this work, we propose a hybrid model that integrates Convolutional Neural Networks (CNNs), Vision Transformers (ViTs), and a Temporal Transformer for robust deepfake detection. Our approach combines frame-level spatial feature extraction with temporal modeling to capture both visual artifacts and motion inconsistencies present in manipulated videos. We further design a three-stage training strategy for stable and efficient fine-tuning. Experiments on a processed dataset demonstrate that our model achieves 94.96% accuracy with balanced precision, recall, and F1-scores across both original and deepfake classes, proving its effectiveness in real-world detection tasks.
 ________________________________________
+
 1. Introduction
 Deepfake videos pose significant threats in misinformation, privacy violations, and digital security. Traditional CNN-based models capture frame-level spatial features but fail to model temporal dependencies. Recently, transformer-based architectures have shown promise in video understanding. To leverage the strengths of both paradigms, we propose a hybrid pipeline that combines CNNs, Vision Transformers (ViTs), and a Temporal Transformer, designed to detect subtle inconsistencies in both frame quality and temporal coherence.
 ________________________________________
 2. Methodology
+   
 2.1 Preprocessing
 •	Raw videos were converted into fixed-length frame sequences.
 •	Each frame was resized, normalized using ImageNet statistics, and stored as tensors.
@@ -31,6 +34,7 @@ We adopted a 3-stage curriculum for stable optimization:
 Mixed precision training was applied to reduce VRAM usage.
 ________________________________________
 3. Results
+   
 •	Classification Report:
 o	Accuracy: 94.96%
 o	Precision: Original (0.92), Deepfake (0.97)
