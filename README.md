@@ -7,6 +7,7 @@ Deepfake detection has become a critical challenge due to the increasing sophist
 ________________________________________
 
 1. Introduction
+   
 Deepfake videos pose significant threats in misinformation, privacy violations, and digital security. Traditional CNN-based models capture frame-level spatial features but fail to model temporal dependencies. Recently, transformer-based architectures have shown promise in video understanding. To leverage the strengths of both paradigms, we propose a hybrid pipeline that combines CNNs, Vision Transformers (ViTs), and a Temporal Transformer, designed to detect subtle inconsistencies in both frame quality and temporal coherence.
 ________________________________________
 2. Methodology
