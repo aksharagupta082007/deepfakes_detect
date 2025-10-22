@@ -55,12 +55,20 @@ ________________________________________
 3. Results
    
 •	Classification Report:
+
 o	Accuracy: 94.96%
+
 o	Precision: Original (0.92), Deepfake (0.97)
+
 o	Recall: Original (0.98), Deepfake (0.92)
+
 o	F1-score: ~0.95 for both classes
+
 •	Confusion Matrix:
+
 •	[[184   4]   → True Originals vs False Deepfakes
+
 •	 [ 15 174]]  → False Originals vs True Deepfakes
+
 These results confirm balanced performance, with the model effectively detecting manipulated videos while minimizing false alarms.
 
