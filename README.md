@@ -3,6 +3,7 @@ Deepfake Video Detection Using a Hybrid CNN-ViT-Temporal Transformer Architectur
 ________________________________________
 
 Abstract
+
 Deepfake detection has become a critical challenge due to the increasing sophistication of AI-generated videos. In this work, we propose a hybrid model that integrates Convolutional Neural Networks (CNNs), Vision Transformers (ViTs), and a Temporal Transformer for robust deepfake detection. Our approach combines frame-level spatial feature extraction with temporal modeling to capture both visual artifacts and motion inconsistencies present in manipulated videos. We further design a three-stage training strategy for stable and efficient fine-tuning. Experiments on a processed dataset demonstrate that our model achieves 94.96% accuracy with balanced precision, recall, and F1-scores across both original and deepfake classes, proving its effectiveness in real-world detection tasks.
 ________________________________________
 
@@ -14,9 +15,14 @@ ________________________________________
    
 2.1 Preprocessing
 •	Raw videos were converted into fixed-length frame sequences.
+
 •	Each frame was resized, normalized using ImageNet statistics, and stored as tensors.
+
 •	Short videos were padded by repeating the last frame.
+
 •	Both image and video inputs were supported, ensuring robust dataset coverage.
+
+
 2.2 Model Architecture
 •	CNN backbone (DenseNet-121): Extracts low-level spatial features.
 •	ViT backbone (ViT-Base Patch16-224): Captures global attention-based features from each frame.
